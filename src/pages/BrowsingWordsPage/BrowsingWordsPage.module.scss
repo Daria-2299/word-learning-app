@@ -1,0 +1,24 @@
+@use "../../assets/styles/templates";
+
+.text {
+  @include templates.text-style;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  width: 40vw;
+  height: 450px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}

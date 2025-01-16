@@ -1,0 +1,42 @@
+@use "../../assets/styles/templates";
+
+.container {
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  gap: 150px;
+  width: 100%;
+}
+
+.image {
+  width: 60%;
+  height: 700px;
+  background-image: url("../../assets/images/error.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  width: 40%;
+  text-align: center;
+}
+
+.title {
+  @include templates.title-style;
+  & {
+    font-size: 36px;
+  }
+  &--large {
+    font-size: 42px;
+  }
+}

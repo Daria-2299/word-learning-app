@@ -1,0 +1,22 @@
+@use "../../assets/styles/vars";
+@use "../../assets/styles/templates";
+
+.link {
+  padding: 10px;
+  text-decoration: none;
+  @include templates.title-style;
+  & {
+    font-size: 36px;
+    font-weight: 400;
+  }
+  &:hover {
+    background-color: vars.$white-color;
+    border-radius: 20px;
+  }
+  @media (max-width: vars.$tablet) {
+    font-size: 32px;
+  }
+  @media (max-width: vars.$mobile) {
+    font-size: 28px;
+  }
+}

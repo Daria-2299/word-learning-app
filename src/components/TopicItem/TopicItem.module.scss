@@ -1,0 +1,31 @@
+@use "../../assets/styles/vars";
+@use "../../assets/styles/templates";
+
+.line {
+  display: grid;
+  grid-template-columns: 25% 20% 55%;
+  gap: 10px;
+  padding: 10px;
+  border-bottom: 2px solid vars.$border-color;
+  @media (max-width: vars.$mobile) {
+    padding: 5px;
+    gap: 0 10px;
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  @include templates.text-style;
+  & {
+    font-weight: 500;
+  }
+  &--buttons {
+    gap: 20px;
+    @media (max-width: vars.$desktop-md) {
+      flex-wrap: wrap;
+    }
+  }
+}

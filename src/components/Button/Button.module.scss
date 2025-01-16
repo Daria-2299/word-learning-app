@@ -1,0 +1,60 @@
+@use "../../assets/styles/vars";
+@use "../../assets/styles/templates";
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  height: 50px;
+  min-width: 160px;
+  padding: 15px;
+  z-index: 15;
+  @include templates.title-style;
+  & {
+    font-size: 20px;
+    color: vars.$white-color;
+    background-color: vars.$ordinary-color;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+  }
+  &--delete {
+    background-color: vars.$important-color;
+  }
+  &--edit {
+    background-color: vars.$accent-color;
+  }
+  &--confirm {
+    background-color: vars.$confirm-color;
+  }
+  &--round {
+    min-width: 80px;
+    height: 80px;
+    font-size: 36px;
+    border-radius: 100%;
+    @media (max-width: vars.$mobile) {
+      min-width: 40px;
+      height: 40px;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    border: 2px solid vars.$white-color;
+  }
+  &:disabled {
+    opacity: 0.5;
+    &:hover {
+      cursor: not-allowed;
+      border: none;
+    }
+  }
+
+  @media (max-width: vars.$tablet) {
+    font-size: 18px;
+  }
+  @media (max-width: vars.$mobile) {
+    font-size: 16px;
+  }
+}

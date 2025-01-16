@@ -1,0 +1,84 @@
+@use "../../assets/styles/vars";
+@use "../../assets/styles/templates";
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: vars.$tablet) {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+}
+.wrapper > .title {
+  flex-grow: 1;
+}
+
+.input-block {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+  @include templates.title-style;
+  @media (max-width: vars.$tablet) {
+    flex-grow: 1;
+  }
+}
+
+.input {
+  width: 400px;
+  height: 50px;
+  padding: 10px;
+  background-color: vars.$bg-header;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  @include templates.text-style;
+  &::placeholder {
+    font-size: 18px;
+  }
+  @media (max-width: vars.$desktop-md) {
+    width: 300px;
+  }
+  @media (max-width: vars.$tablet) {
+    flex-grow: 1;
+  }
+}
+
+.error {
+  outline: 2px solid #ff0000;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.titles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-bottom: 2px solid vars.$border-color;
+  @media (max-width: vars.$mobile) {
+    order: 1;
+    & > :last-child {
+      display: none;
+    }
+  }
+}
+
+.title {
+  padding: 10px 20px;
+  @include templates.title-style;
+  &--addition {
+    font-size: 36px;
+    text-decoration: underline;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  order: 2;
+}

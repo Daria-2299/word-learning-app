@@ -1,0 +1,649 @@
+{
+  "words": [
+    {
+      "id": "1",
+      "german": "die Familie",
+      "russian": "Семья",
+      "tags": "Семья"
+    },
+    {
+      "id": "2",
+      "german": "die Eltern",
+      "transcription": "",
+      "russian": "Родители",
+      "tags": "Семья"
+    },
+    {
+      "id": "3",
+      "german": "die Frau",
+      "russian": "Женщина",
+      "tags": "Семья"
+    },
+    {
+      "id": "4",
+      "german": "die Mutter",
+      "transcription": "",
+      "russian": "Мать",
+      "tags": "Семья"
+    },
+    {
+      "id": "5",
+      "german": "der Vater",
+      "transcription": "",
+      "russian": "Отец",
+      "tags": "Семья"
+    },
+    {
+      "id": "6",
+      "german": "die Tochter",
+      "transcription": "",
+      "russian": "Дочь",
+      "tags": "Семья"
+    },
+    {
+      "id": "7",
+      "german": "der Anzug",
+      "transcription": "",
+      "russian": "Костюм",
+      "tags": "Одежда"
+    },
+    {
+      "id": "8",
+      "german": "das Gefühl",
+      "transcription": "",
+      "russian": "Эмоция, чувство",
+      "tags": "Эмоции"
+    },
+    {
+      "id": "9",
+      "german": "die Kleidung",
+      "transcription": "",
+      "russian": "Одежда",
+      "tags": "Одежда"
+    },
+    {
+      "id": "10",
+      "german": "die Hose",
+      "transcription": "",
+      "russian": "Брюки",
+      "tags": "Одежда"
+    },
+    {
+      "id": "11",
+      "german": "die Freude",
+      "transcription": "",
+      "russian": "Радость",
+      "tags": "Эмоции"
+    },
+    {
+      "id": "12",
+      "german": "das Interesse",
+      "russian": "Интерес",
+      "tags": "Эмоции"
+    },
+    {
+      "id": "14",
+      "german": "die Großmutter",
+      "russian": "Бабушка",
+      "tags": "Семья"
+    },
+    {
+      "id": "16",
+      "german": "der Enkel",
+      "russian": "Внук",
+      "tags": "Семья"
+    },
+    {
+      "id": "1733822557841",
+      "german": "haben",
+      "russian": "иметь",
+      "tags": "Глаголы"
+    },
+    {
+      "id": "1733822673312",
+      "german": "die Wäsche",
+      "russian": "белье",
+      "tags": "Одежда"
+    },
+    {
+      "id": "1733822687561",
+      "german": "der Mantel",
+      "russian": "пальто",
+      "tags": "Одежда"
+    },
+    {
+      "id": "1733822716811",
+      "german": "die Bluse",
+      "russian": "блузка",
+      "tags": "Одежда"
+    },
+    {
+      "id": "1733822755328",
+      "german": "der Rock",
+      "russian": "юбка",
+      "tags": "Одежда"
+    },
+    {
+      "id": "1733822764578",
+      "german": "das T-Shirt",
+      "russian": "футболка",
+      "tags": "Одежда"
+    },
+    {
+      "id": "1733822800286",
+      "german": "das Hemd",
+      "russian": "рубашка",
+      "tags": "Одежда"
+    },
+    {
+      "id": "1733822810108",
+      "german": "das Kleid",
+      "russian": "платье",
+      "tags": "Одежда"
+    },
+    {
+      "id": "1733822821081",
+      "german": "die Schuhe",
+      "russian": "обувь",
+      "tags": "Одежда"
+    },
+    {
+      "id": "1733822850517",
+      "german": "die Tapferkeit",
+      "russian": "храбрость",
+      "tags": "Эмоции"
+    },
+    {
+      "id": "1733822864345",
+      "german": "die Hoffnung",
+      "russian": "надежда",
+      "tags": "Эмоции"
+    },
+    {
+      "id": "1733822873973",
+      "german": "die Sicherheit",
+      "russian": "безопасность",
+      "tags": "Эмоции"
+    },
+    {
+      "id": "1733822885652",
+      "german": "der Zweifel",
+      "russian": "сомнение",
+      "tags": "Эмоции"
+    },
+    {
+      "id": "1733822900343",
+      "german": "die Traurigkeit",
+      "russian": "печаль",
+      "tags": "Эмоции"
+    },
+    {
+      "id": "1733822915095",
+      "german": "die Angst",
+      "russian": "страх",
+      "tags": "Эмоции"
+    },
+    {
+      "id": "1733822935322",
+      "german": "die Langweile",
+      "russian": "скука",
+      "tags": "Эмоции"
+    },
+    {
+      "id": "1733822976098",
+      "german": "die Hauptschule",
+      "russian": "средняя школа",
+      "tags": "Образование"
+    },
+    {
+      "id": "1733822985341",
+      "german": "das Gymnasium",
+      "russian": "гимназия",
+      "tags": "Образование"
+    },
+    {
+      "id": "1733822993822",
+      "german": "das Fach",
+      "russian": "предмет",
+      "tags": "Образование"
+    },
+    {
+      "id": "1733823005701",
+      "german": "die Universität",
+      "russian": "университет",
+      "tags": "Образование"
+    },
+    {
+      "id": "1733823020376",
+      "german": "das Lehrbuch",
+      "russian": "учебник",
+      "tags": "Образование"
+    },
+    {
+      "id": "1733823032288",
+      "german": "der Stundenplan",
+      "russian": "расписание",
+      "tags": "Образование"
+    },
+    {
+      "id": "1733823040992",
+      "german": "die Mathematik",
+      "russian": "математика",
+      "tags": "Образование"
+    },
+    {
+      "id": "1733823050022",
+      "german": "die Physik",
+      "russian": "Физика",
+      "tags": "Образование"
+    },
+    {
+      "id": "1733823063539",
+      "german": "die Chemie",
+      "russian": "Химия",
+      "tags": "Образование"
+    },
+    {
+      "id": "1733823075136",
+      "german": "der Sportunterricht",
+      "russian": "физическая культура",
+      "tags": "Образование"
+    },
+    {
+      "id": "1733823084875",
+      "german": "das Papier",
+      "russian": "бумага",
+      "tags": "Образование"
+    },
+    {
+      "id": "1733823093069",
+      "german": "der Bleistift",
+      "russian": "карандаш",
+      "tags": "Образование"
+    },
+    {
+      "id": "1733823102214",
+      "german": "der Kugelschreiber",
+      "russian": "ручка",
+      "tags": "Образование"
+    },
+    {
+      "id": "1733823111548",
+      "german": "das Heft",
+      "russian": "тетрадь",
+      "tags": "Образование"
+    },
+    {
+      "id": "1733823125484",
+      "german": "die Grundschule",
+      "russian": "начальная школа",
+      "tags": "Образование"
+    },
+    {
+      "id": "1733823135806",
+      "german": "der Unterricht",
+      "russian": "занятие",
+      "tags": "Образование"
+    },
+    {
+      "id": "1733823145632",
+      "german": "der Lehrer",
+      "russian": "учитель, преподаватель",
+      "tags": "Образование"
+    },
+    {
+      "id": "1733823155627",
+      "german": "der Schüler",
+      "russian": "ученик",
+      "tags": "Образование"
+    },
+    {
+      "id": "1733823164104",
+      "german": "die Prüfung",
+      "russian": "экзамен",
+      "tags": "Образование"
+    },
+    {
+      "id": "1733823258943",
+      "german": "der Käufer",
+      "russian": "покупатель",
+      "tags": "Покупки"
+    },
+    {
+      "id": "1733823265492",
+      "german": "die Ware",
+      "russian": "товар",
+      "tags": "Покупки"
+    },
+    {
+      "id": "1733823276180",
+      "german": "das Angebot",
+      "russian": "предложение",
+      "tags": "Покупки"
+    },
+    {
+      "id": "1733823299371",
+      "german": "der Kunde",
+      "russian": "клиент",
+      "tags": "Покупки"
+    },
+    {
+      "id": "1733823308080",
+      "german": "der Verkäufer",
+      "russian": "продавец",
+      "tags": "Покупки"
+    },
+    {
+      "id": "1733823322518",
+      "german": "das Geschäft",
+      "russian": "магазин",
+      "tags": "Покупки"
+    },
+    {
+      "id": "1733823327701",
+      "german": "der Supermarkt",
+      "russian": "супермаркет",
+      "tags": "Покупки"
+    },
+    {
+      "id": "1733823338938",
+      "german": "der Markt",
+      "russian": "рынок",
+      "tags": "Покупки"
+    },
+    {
+      "id": "1733823347307",
+      "german": "die Bäckerei",
+      "russian": "булочная",
+      "tags": "Покупки"
+    },
+    {
+      "id": "1733823359236",
+      "german": "die Apotheke",
+      "russian": "аптека",
+      "tags": "Покупки"
+    },
+    {
+      "id": "1733823368602",
+      "german": "der Preis",
+      "russian": "цена",
+      "tags": "Покупки"
+    },
+    {
+      "id": "1733823376636",
+      "german": "die Kasse",
+      "russian": "касса",
+      "tags": "Покупки"
+    },
+    {
+      "id": "1733823386354",
+      "german": "der Kassierer",
+      "russian": "кассир",
+      "tags": "Покупки"
+    },
+    {
+      "id": "1733823399396",
+      "german": "die Packung",
+      "russian": "упаковка, пакет, пачка",
+      "tags": "Покупки"
+    },
+    {
+      "id": "1733823411376",
+      "german": "der Rest",
+      "russian": "сдача",
+      "tags": "Покупки"
+    },
+    {
+      "id": "1733823421130",
+      "german": "das Gramm",
+      "russian": "грамм",
+      "tags": "Покупки"
+    },
+    {
+      "id": "1733823430701",
+      "german": "das Kilogramm",
+      "russian": "килограмм",
+      "tags": "Покупки"
+    },
+    {
+      "id": "1733823443281",
+      "german": "das Kleingeld",
+      "russian": "мелочь",
+      "tags": "Покупки"
+    },
+    {
+      "id": "1733823480095",
+      "german": "der Muskel",
+      "russian": "мышца",
+      "tags": "Тело"
+    },
+    {
+      "id": "1733823490746",
+      "german": "die Haut",
+      "russian": "кожа",
+      "tags": "Тело"
+    },
+    {
+      "id": "1733823499567",
+      "german": "das Blut",
+      "russian": "кровь",
+      "tags": "Тело"
+    },
+    {
+      "id": "1733823507884",
+      "german": "der Körper",
+      "russian": "тело",
+      "tags": "Тело"
+    },
+    {
+      "id": "1733823519436",
+      "german": "der Kopf",
+      "russian": "голова",
+      "tags": "Тело"
+    },
+    {
+      "id": "1733823530392",
+      "german": "der Hals",
+      "russian": "шея",
+      "tags": "Тело"
+    },
+    {
+      "id": "1733823541325",
+      "german": "der Rücken",
+      "russian": "спина",
+      "tags": "Тело"
+    },
+    {
+      "id": "1733823553043",
+      "german": "der Arm",
+      "russian": "рука",
+      "tags": "Тело"
+    },
+    {
+      "id": "1733823562032",
+      "german": "das Herz",
+      "russian": "сердце",
+      "tags": "Тело"
+    },
+    {
+      "id": "1733823578869",
+      "german": "der Finger",
+      "russian": "палец руки",
+      "tags": "Тело"
+    },
+    {
+      "id": "1733823587957",
+      "german": "die Nase",
+      "russian": "нос",
+      "tags": "Тело"
+    },
+    {
+      "id": "1733823596800",
+      "german": "der Zahn",
+      "russian": "зуб",
+      "tags": "Тело"
+    },
+    {
+      "id": "1733823609426",
+      "german": "das Haar",
+      "russian": "волос",
+      "tags": "Тело"
+    },
+    {
+      "id": "1733823614672",
+      "german": "der Bauch",
+      "russian": "живот",
+      "tags": "Тело"
+    },
+    {
+      "id": "1733823623297",
+      "german": "die Zunge",
+      "russian": "язык",
+      "tags": "Тело"
+    },
+    {
+      "id": "1733823678704",
+      "german": "arbeiten",
+      "russian": "работать",
+      "tags": "Глаголы"
+    },
+    {
+      "id": "1733823688928",
+      "german": "bauen",
+      "russian": "строить",
+      "tags": "Глаголы"
+    },
+    {
+      "id": "1733823702673",
+      "german": "bleiben",
+      "russian": "оставаться",
+      "tags": "Глаголы"
+    },
+    {
+      "id": "1733823711479",
+      "german": "brauchen",
+      "russian": "нуждаться",
+      "tags": "Глаголы"
+    },
+    {
+      "id": "1733823719726",
+      "german": "denken",
+      "russian": "думать",
+      "tags": "Глаголы"
+    },
+    {
+      "id": "1733823734129",
+      "german": "essen",
+      "russian": "есть",
+      "tags": "Глаголы"
+    },
+    {
+      "id": "1733823741878",
+      "german": "fahren",
+      "russian": "ехать",
+      "tags": "Глаголы"
+    },
+    {
+      "id": "1733823748158",
+      "german": "finden",
+      "russian": "находить",
+      "tags": "Глаголы"
+    },
+    {
+      "id": "1733823756438",
+      "german": "fragen",
+      "russian": "спрашивать",
+      "tags": "Глаголы"
+    },
+    {
+      "id": "1733823766798",
+      "german": "gehen",
+      "russian": "ходить",
+      "tags": "Глаголы"
+    },
+    {
+      "id": "1733823781276",
+      "german": "hören",
+      "russian": "слушать",
+      "tags": "Глаголы"
+    },
+    {
+      "id": "1733823788995",
+      "german": "kaufen",
+      "russian": "покупать",
+      "tags": "Глаголы"
+    },
+    {
+      "id": "1733823802901",
+      "german": "lernen",
+      "russian": "учиться",
+      "tags": "Глаголы"
+    },
+    {
+      "id": "1733823809317",
+      "german": "lesen",
+      "russian": "читать",
+      "tags": "Глаголы"
+    },
+    {
+      "id": "1733823818611",
+      "german": "machen",
+      "russian": "делать",
+      "tags": "Глаголы"
+    },
+    {
+      "id": "1733823853729",
+      "german": "sein",
+      "russian": "быть",
+      "tags": "Глаголы"
+    },
+    {
+      "id": "1733823860830",
+      "german": "sitzen",
+      "russian": "сидеть",
+      "tags": "Глаголы"
+    },
+    {
+      "id": "1733823880934",
+      "german": "sprechen",
+      "russian": "разговаривать",
+      "tags": "Глаголы"
+    },
+    {
+      "id": "1733823889786",
+      "german": "trinken",
+      "russian": "пить",
+      "tags": "Глаголы"
+    },
+    {
+      "id": "1733823905204",
+      "german": "verstehen",
+      "russian": "понимать",
+      "tags": "Глаголы"
+    },
+    {
+      "id": "1733823915759",
+      "german": "wohnen",
+      "russian": "жить",
+      "tags": "Глаголы"
+    },
+    {
+      "id": "3f9eeafb-bbb6-405d-92c6-f26b3be54dcd",
+      "german": "fcvg",
+      "russian": "dfcvg",
+      "tags": "Семья"
+    },
+    {
+      "id": "748bbf74-a6e4-43c3-a6de-f0fdc9059fd4",
+      "german": "fgvbhsedrf",
+      "russian": "fghb",
+      "tags": "Семья"
+    },
+    {
+      "id": "bfeb4763-1a83-4955-8b47-958a1d66a27d",
+      "german": "tfgyuh",
+      "russian": "аепнро",
+      "tags": "Семья"
+    }
+  ]
+}

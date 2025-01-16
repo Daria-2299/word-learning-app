@@ -1,0 +1,33 @@
+@use "vars";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin title-style {
+  font-family: vars.$second-family;
+  font-size: 32px;
+  font-weight: 500;
+  color: vars.$text-color;
+  @media (max-width: vars.$tablet) {
+    font-size: 26px;
+  }
+  @media (max-width: vars.$mobile) {
+    font-size: 20px;
+  }
+}
+
+@mixin text-style {
+  font-family: vars.$third-family;
+  font-size: 24px;
+  font-weight: 600;
+  color: vars.$text-color;
+  @media (max-width: vars.$tablet) {
+    font-size: 20px;
+  }
+  @media (max-width: vars.$mobile) {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,37 @@
+@use "../../assets/styles/vars";
+@use "../../assets/styles/templates";
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  border-bottom: 2px solid vars.$border-color;
+  padding: 10px;
+  gap: 10px;
+  @media (max-width: vars.$tablet) {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+}
+
+.input {
+  padding: 0 20px;
+  width: 100%;
+  background-color: vars.$bg-header;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  @include templates.text-style;
+  &::placeholder {
+    font-size: 18px;
+    color: vars.$text-color;
+  }
+  @media (max-width: vars.$tablet) {
+    height: 45px;
+  }
+}
+
+.error {
+  outline: 2px solid #ff0000;
+}

@@ -1,0 +1,47 @@
+@use "../../assets/styles/vars";
+@use "../../assets/styles/templates";
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 10%;
+  background-color: vars.$bg-header;
+  z-index: 20;
+  @media (max-width: vars.$desktop-md) {
+    padding: 15px 5%;
+  }
+  @media (max-width: vars.$mobile) {
+    padding: 10px 2.5%;
+  }
+}
+
+.title {
+  @include templates.title-style;
+  & {
+    font-size: 26px;
+  }
+  @media (max-width: vars.$tablet) {
+    font-size: 22px;
+  }
+  @media (max-width: vars.$mobile) {
+    font-size: 18px;
+  }
+}
+
+.subtitle {
+  @include templates.text-style;
+  & {
+    font-size: 18px;
+    font-weight: 200;
+  }
+  @media (max-width: vars.$tablet) {
+    font-size: 16px;
+  }
+  @media (max-width: vars.$mobile) {
+    font-size: 14px;
+  }
+}
