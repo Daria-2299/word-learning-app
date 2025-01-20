@@ -4,23 +4,24 @@ import Button from "../Button/Button";
 import classes from "./NewWord.module.scss";
 
 export default function NewWord({ isTopicNameFilled, handleAddition }) {
-    const [wordInput, setWordInput] = useState('')
-    const [translationInput, setTranslationInput] = useState('')
-    const [isInputsError, setInputsError] = useState(false)
+    const [wordInput, setWordInput] = useState('');
+    const [translationInput, setTranslationInput] = useState('');
+    const [isInputsError, setInputsError] = useState(false);
 
+    /** Validation of the entered word and translation */
     const handleValidation = (e) => {
         e.preventDefault();
-        handleAddition(wordInput, translationInput)
+        handleAddition(wordInput, translationInput);
         if (wordInput && translationInput) {
-            setInputsError(false)
+            setInputsError(false);
             if (isTopicNameFilled) {
-                setWordInput('')
-                setTranslationInput('')
+                setWordInput('');
+                setTranslationInput('');
             }
         }
         else setInputsError(true)
-
     }
+
     return (
         <form
             className={classes.form}
@@ -52,5 +53,5 @@ export default function NewWord({ isTopicNameFilled, handleAddition }) {
 NewWord.propTypes = {
     isTopicNameFilled: PropTypes.bool,
     handleAddition: PropTypes.func
-}
+};
 

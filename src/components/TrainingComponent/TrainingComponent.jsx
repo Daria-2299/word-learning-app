@@ -9,32 +9,33 @@ import Error from "../Error/Error";
 import classes from "./TrainingComponent.module.scss";
 
 const TrainingComponent = observer(() => {
-    const store = useContext(WordsStoreContext)
-    const [curIndex, setCurIndex] = useState(0)
-    const [knownQuantity, setKnownQuantity] = useState(0)
-    const [repeatQuantity, setRepeatQuantity] = useState(0)
-    const [studyQuantity, setStudyQuantity] = useState(0)
+    const store = useContext(WordsStoreContext);
+    const [curIndex, setCurIndex] = useState(0);
+    const [knownQuantity, setKnownQuantity] = useState(0);
+    const [repeatQuantity, setRepeatQuantity] = useState(0);
+    const [studyQuantity, setStudyQuantity] = useState(0);
+    const { topicName } = useParams();
 
-    const { topicName } = useParams()
     useEffect(() => {
-        store.setFilterTag(topicName)
-    }, [topicName, store])
+        store.setFilterTag(topicName);
+    }, [topicName, store]);
 
     const handleKnownButton = () => {
-        setCurIndex(curIndex + 1)
-        setKnownQuantity(knownQuantity + 1)
+        setCurIndex(curIndex + 1);
+        setKnownQuantity(knownQuantity + 1);
     }
 
     const handleRepeatButton = () => {
-        setCurIndex(curIndex + 1)
-        setRepeatQuantity(repeatQuantity + 1)
+        setCurIndex(curIndex + 1);
+        setRepeatQuantity(repeatQuantity + 1);
     }
 
     const handleStudyButton = () => {
-        setCurIndex(curIndex + 1)
-        setStudyQuantity(studyQuantity + 1)
+        setCurIndex(curIndex + 1);
+        setStudyQuantity(studyQuantity + 1);
     }
 
+    /** Set direction of card movement*/
     const setAction = (tempIndex) => {
         if (curIndex === 0)
             return ''
@@ -51,6 +52,7 @@ const TrainingComponent = observer(() => {
             <Loading />
         )
     }
+
     if (store.error) {
         return (
             <Error />
@@ -68,8 +70,8 @@ const TrainingComponent = observer(() => {
                                 <CardItem
                                     key={item.id}
                                     id={item.id}
-                                    word={item["german"]}
-                                    translation={item["russian"]}
+                                    // word={item["german"]}
+                                    // translation={item["russian"]}
                                     action={setAction(itemIndex)}
                                     active={itemIndex === curIndex}
                                     className={classes.card}
@@ -119,4 +121,4 @@ const TrainingComponent = observer(() => {
     )
 })
 
-export default TrainingComponent
+export default TrainingComponent;

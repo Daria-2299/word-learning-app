@@ -9,6 +9,7 @@ export default function TopicItem(props) {
     const handleClickEdit = () => {
         navigate(`/topics/${props.listName}`);
     };
+
     const handleClickBrowsing = () => {
         navigate(`/flashcards/${props.listName}`);
     };
@@ -16,10 +17,15 @@ export default function TopicItem(props) {
     const handleClickTrainig = () => {
         navigate(`/game/${props.listName}`);
     };
+
     return (
         <div className={classes.line}>
-            <p className={classes.content}>{props.listName}</p>
-            <p className={classes.content}>{props.quantityCards}</p>
+            <p className={classes.content}>
+                {props.listName}
+            </p>
+            <p className={classes.content}>
+                {props.quantityCards}
+            </p>
             <div className={`${classes.content} ${classes["content--buttons"]}`}>
                 <Button
                     type="edit"

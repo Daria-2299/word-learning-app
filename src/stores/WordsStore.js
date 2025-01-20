@@ -29,6 +29,7 @@ class WordsStore {
     this.fetchWords();
   }
 
+  /** Getting a list of words from a json-server*/
   async fetchWords() {
     this.loading = true;
     try {
@@ -53,6 +54,7 @@ class WordsStore {
     }
   }
 
+  /** Deletion a word from the json-server (using id) */
   async deleteWord(id) {
     try {
       const response = await fetch(`/words/${id}`, {
@@ -73,6 +75,7 @@ class WordsStore {
     }
   }
 
+  /** Adding a word to the json-server */
   async addWord(newWordInfo) {
     try {
       const newWord = new Word(
@@ -109,6 +112,7 @@ class WordsStore {
     }
   }
 
+  /** Updating a word on a json server*/
   async updateWord(updateWord) {
     try {
       const response = await fetch(`/words/${updateWord.id}`, {
@@ -144,11 +148,13 @@ class WordsStore {
     }
   }
 
+  /** Setting the topic name */
   setFilterTag(tag) {
     this.filterTag = tag;
     this.filteredWords = this.wordList.filter((item) => item.tags === tag);
   }
 
+  /** Getting the current word information (using id) */
   getCurrentWord(id) {
     return this.wordList.find((item) => item.id === id);
   }

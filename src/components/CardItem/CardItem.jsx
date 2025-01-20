@@ -1,29 +1,34 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, useContext } from "react";
+import { WordsStoreContext } from "../../stores/WordsStore";
 import PropTypes from "prop-types";
 import Button from "../Button/Button";
 import classes from "./CardItem.module.scss";
 
 export default function CardItem({
-    word, translation, action, active, increaseStudiedWords = () => { }
+    // word,translation, action, active, increaseStudiedWords = () => { }
+    id, action, active, increaseStudiedWords = () => { }
 }) {
+    const store = useContext(WordsStoreContext);
+    const curWord = store.getCurrentWord(id);
     const [displayTranslation, setTranslation] = useState(false);
     const buttonRef = useRef(null);
 
-    const validActions = ['in-right', 'in-left', 'out-right', 'out-left', 'in-bottom', 'out-bottom']
-    const isValidAction = validActions.includes(action)
+    const validActions = ['in-right', 'in-left', 'out-right', 'out-left', 'in-bottom', 'out-bottom'];
+    const isValidAction = validActions.includes(action);
 
+    /**Translation or word display control*/
     const handleTranslation = () => {
-        setTranslation(!displayTranslation)
+        setTranslation(!displayTranslation);
         if (!displayTranslation)
-            increaseStudiedWords()
+            increaseStudiedWords();
     }
 
     useEffect(() => {
-        setTranslation(false)
+        setTranslation(false);
         if (buttonRef.current && active) {
             buttonRef.current.focus();
         }
-    }, [active]);
+    }, [active])
 
     return (
         < div
@@ -33,14 +38,14 @@ export default function CardItem({
         >
             <CardContent
                 typeCard={!displayTranslation ? classes["card--front"] : classes["card--back"]}
-                cardWord={word}
+                cardWord={curWord.german}
                 buttonAction="Показать перевод"
                 onClick={handleTranslation}
                 buttonRef={buttonRef}
             />
             <CardContent
                 typeCard={displayTranslation ? classes["card--front"] : classes["card--back"]}
-                cardWord={translation}
+                cardWord={curWord.russian}
                 buttonAction="Назад"
                 onClick={handleTranslation}
             />
@@ -68,8 +73,9 @@ function CardContent(props) {
 }
 
 CardItem.propTypes = {
-    word: PropTypes.string,
-    translation: PropTypes.string,
+    // word: PropTypes.string,
+    // translation: PropTypes.string,
+    id: PropTypes.string,
     action: PropTypes.string,
     active: PropTypes.bool,
     increaseStudiedWords: PropTypes.func

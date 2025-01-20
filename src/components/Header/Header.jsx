@@ -36,7 +36,6 @@ const Header = observer(() => {
             )
             }
         </header >
-
     )
 }
 )

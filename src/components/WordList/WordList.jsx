@@ -10,13 +10,13 @@ import Error from "../Error/Error";
 import classes from "./WordList.module.scss";
 
 const WordList = observer(() => {
-    const store = useContext(WordsStoreContext)
-    const { topicId } = useParams()
-    const navigate = useNavigate()
+    const store = useContext(WordsStoreContext);
+    const { topicId } = useParams();
+    const navigate = useNavigate();
 
-    const [topicName, setTopicName] = useState(topicId)
-    const [topicNameInput, setTopicNameInput] = useState('')
-    const [errorTopicName, setErrorTopicName] = useState(false)
+    const [topicName, setTopicName] = useState(topicId);
+    const [topicNameInput, setTopicNameInput] = useState('');
+    const [errorTopicName, setErrorTopicName] = useState(false);
 
     useEffect(() => {
         setTopicName(topicId)
@@ -32,14 +32,19 @@ const WordList = observer(() => {
             : false
     }
 
-    const handleTopicNameInput = (evt) => {
-        setTopicNameInput(evt.target.value.trim())
-        setErrorTopicName(false)
+    const handleClickTrainig = () => {
+        navigate(`/game/${topicName}`);
     }
 
+    const handleTopicNameInput = (evt) => {
+        setTopicNameInput(evt.target.value.trim());
+        setErrorTopicName(false);
+    }
+
+    /** Adding a new word to the list*/
     const handleAddition = (word, translation) => {
         if (!isTopicNameFilled()) {
-            setErrorTopicName(true)
+            setErrorTopicName(true);
             return
         }
         if (word && translation) {
@@ -53,15 +58,12 @@ const WordList = observer(() => {
         }
     }
 
-    const handleClickTrainig = () => {
-        navigate(`/game/${topicName}`);
-    };
-
     if (store.loading) {
         return (
             <Loading />
         )
     }
+
     if (store.error) {
         return (
             <Error />
@@ -124,5 +126,5 @@ const WordList = observer(() => {
     );
 })
 
-export default WordList
+export default WordList;
 

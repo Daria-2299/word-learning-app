@@ -28,7 +28,7 @@ const Button = forwardRef(
     }
 )
 
-export default Button
+export default Button;
 
 Button.propTypes = {
     type: PropTypes.string,

@@ -9,15 +9,16 @@ import Error from "../Error/Error";
 import classes from "./TopicList.module.scss";
 
 const TopicsList = observer(() => {
-    const store = useContext(WordsStoreContext)
+    const store = useContext(WordsStoreContext);
     const navigate = useNavigate();
 
     const handleClick = () => {
-        const idNewList = 'new'
+        const idNewList = 'new';
         navigate(`/topics/${idNewList}`);
     };
 
-    const getWordList = () => {
+    /** Get a list of topics and the number of words in them*/
+    const getTopicList = () => {
         let wordTopics = {};
         store.wordList.forEach(
             (word) =>
@@ -58,7 +59,7 @@ const TopicsList = observer(() => {
                 </div>
                 <div className={classes.content}>
                     {
-                        getWordList()
+                        getTopicList()
                     }
                 </div>
             </section>
@@ -71,4 +72,4 @@ const TopicsList = observer(() => {
     );
 })
 
-export default TopicsList
+export default TopicsList;

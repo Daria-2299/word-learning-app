@@ -7,19 +7,19 @@ import Button from "../../components/Button/Button";
 import classes from "./BrowsingWordsPage.module.scss";
 
 const BrowsingWordsPage = observer(() => {
-    const store = useContext(WordsStoreContext)
-    const { topicId } = useParams()
+    const store = useContext(WordsStoreContext);
+    const { topicId } = useParams();
     const navigate = useNavigate();
 
-    const [isSliderVisible, setDisplaySlider] = useState(true)
-    const [studiedWords, setStudiedWords] = useState([])
+    const [isSliderVisible, setDisplaySlider] = useState(true);
+    const [studiedWords, setStudiedWords] = useState([]);
 
     useEffect(() => {
-        store.setFilterTag(topicId)
+        store.setFilterTag(topicId);
     }, [topicId, store])
 
     const handleView = () => {
-        setDisplaySlider(true)
+        setDisplaySlider(true);
     }
 
     const handleChangeTopic = () => {

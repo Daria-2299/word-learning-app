@@ -3,7 +3,8 @@ import menuStore from "../../stores/BurgerMenuStore";
 import classes from "./Menu.module.scss";
 
 export default function Menu() {
-    const idNewList = 'new'
+    const idNewList = 'new';
+    
     return (
         <>
             <Link
@@ -28,6 +29,5 @@ export default function Menu() {
                 Создать список слов
             </Link>
         </>
-
     )
 }

@@ -6,16 +6,16 @@ import CardItem from "../CardItem/CardItem";
 import classes from "./CardSlider.module.scss";
 
 export default function CardSlider(props) {
-    const { cards, setDisplaySlider, studiedWords, setStudiedWords } = props
+    const { cards, setDisplaySlider, studiedWords, setStudiedWords } = props;
 
     const [direction, setDirection] = useState('');
-    const [curIndex, setCurIndex] = useState(0)
+    const [curIndex, setCurIndex] = useState(0);
 
     const handleKeyDown = useCallback((event) => {
         if (event.key === 'ArrowLeft' && curIndex !== 0)
-            handlePreviousCard()
+            handlePreviousCard();
         else if (event.key === 'ArrowRight')
-            handleNextCard()
+            handleNextCard();
     }, [curIndex])
 
     useEffect(() => {
@@ -25,26 +25,29 @@ export default function CardSlider(props) {
         };
     }, [handleKeyDown])
 
+    /** Сontrol display of next card*/
     const handleNextCard = () => {
         if (curIndex + 1 === cards.length) {
-            setDisplaySlider(false)
+            setDisplaySlider(false);
         }
         else {
-            setCurIndex(curIndex + 1)
-            setDirection('left')
+            setCurIndex(curIndex + 1);
+            setDirection('left');
         }
     }
 
+    /** Control display of previous card */
     const handlePreviousCard = () => {
         if (curIndex === 0) {
-            setCurIndex(cards.length - 1)
+            setCurIndex(cards.length - 1);
         }
         else {
-            setCurIndex(curIndex - 1)
-            setDirection('right')
+            setCurIndex(curIndex - 1);
+            setDirection('right');
         }
     }
 
+    /** Sey direction of card movement */
     const setAction = (tempIndex) => {
         if (curIndex === tempIndex && direction)
             return 'in-' + direction
@@ -56,6 +59,7 @@ export default function CardSlider(props) {
         return ''
     }
 
+    /** Increasing the number of words studied*/
     const increaseStudiedWords = () => {
         const isFoundItem = studiedWords.find(item => item === cards[curIndex].id);
         if (!isFoundItem)
@@ -77,8 +81,9 @@ export default function CardSlider(props) {
                             return (
                                 <CardItem
                                     key={item.id}
-                                    word={item["german"]}
-                                    translation={item["russian"]}
+                                    id={item.id}
+                                    // word={item["german"]}
+                                    // translation={item["russian"]}
                                     action={setAction(itemIndex)}
                                     active={itemIndex === curIndex}
                                     increaseStudiedWords={increaseStudiedWords}

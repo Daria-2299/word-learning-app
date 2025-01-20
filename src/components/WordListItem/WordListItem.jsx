@@ -8,6 +8,7 @@ import classes from "./WordListItem.module.scss";
 
 const WordListItem = observer(({ id }) => {
     const [edit, setEditMode] = useState(false);
+
     const handleEditMode = () => {
         setEditMode(!edit);
     }
@@ -33,15 +34,17 @@ const WordListItem = observer(({ id }) => {
 WordListItem.propTypes = {
     id: PropTypes.string,
 };
+
 export default WordListItem;
 
 const EditWordLine = observer(({ id, handleEditMode }) => {
     const store = useContext(WordsStoreContext)
-    const curWord = store.getCurrentWord(id)
-    const [inputWord, setWord] = useState(curWord.german)
-    const [inputTranslation, setTranslation] = useState(curWord.russian)
-    const [isInputsError, setIsInputsError] = useState(false)
+    const curWord = store.getCurrentWord(id);
+    const [inputWord, setWord] = useState(curWord.german);
+    const [inputTranslation, setTranslation] = useState(curWord.russian);
+    const [isInputsError, setIsInputsError] = useState(false);
 
+    /** Saving changes to a word or translation*/
     const handleSave = () => {
         if (inputWord && inputTranslation) {
             const editWord = {
@@ -49,9 +52,9 @@ const EditWordLine = observer(({ id, handleEditMode }) => {
                 "german": inputWord,
                 "russian": inputTranslation,
                 "tags": curWord.tags
-            }
-            store.updateWord(editWord)
-            handleEditMode()
+            };
+            store.updateWord(editWord);
+            handleEditMode();
         }
         else setIsInputsError(true)
     }
@@ -93,11 +96,11 @@ const EditWordLine = observer(({ id, handleEditMode }) => {
 EditWordLine.propTypes = {
     id: PropTypes.string,
     handleState: PropTypes.func
-}
+};
 
 const DisplayWordLine = observer(({ id, handleEditMode }) => {
-    const store = useContext(WordsStoreContext)
-    const curWord = store.getCurrentWord(id)
+    const store = useContext(WordsStoreContext);
+    const curWord = store.getCurrentWord(id);
 
     if (store.error) {
         return (
@@ -132,4 +135,4 @@ const DisplayWordLine = observer(({ id, handleEditMode }) => {
 DisplayWordLine.propTypes = {
     id: PropTypes.string,
     handleState: PropTypes.func
-}
+};
